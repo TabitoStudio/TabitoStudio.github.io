@@ -7,5 +7,7 @@ body{
   background-color: #000000;            /* 背景色 */
   background-size: cover;               /* 全画面 */
   background-attachment: fixed;         /* 固定 */
-  background-position: center center;   /* 縦横中央 */;
+  background-position: center center;   /* 縦横中央 */
+  width:100%; /*ページ全体の幅は100%と指定する*/
+  text-align:center; 
 }
