@@ -65,7 +65,7 @@ margin-right: 20px;
 .box2 {
 border: #00bfff 1px solid; /*境界線の指定*/
 padding:10px;
-max-width: 1000px;
+width: 40%;
 height: 270px;
 float:left;
 }
