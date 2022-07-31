@@ -34,32 +34,51 @@ a {
   color: white;
   margin-right: 35px;
 }
-.box {
+.box1 {
 border: #4e7bcc 1px solid; /*境界線の指定*/
 padding:10px;
 width: 350px;
 height: 270px;
+float:left;
+margin-right: 20px;
 }
-.box h2 {
+.box1 h2 {
   margin:1px 0 0 0px;
   padding:0px;
   text-align: left;
 }
-.box h3 {
+.box1 h3 {
   margin:1px 0 0 0px;
   padding:0px;
   text-align: left;
   float:left;
 }
-.box h4 {
+.box1 h4 {
   margin:1px 0 0 0px;
   padding:0px;
   text-align: left;
 }
-.box img {
+.box1 img {
   border-radius:50%;
   padding:0px;
   margin-bottom:1px;
   margin-top:1px;
   margin-right: 20px;
+}
+.box2 {
+border: #00bfff 1px solid; /*境界線の指定*/
+padding:10px;
+width: auto;
+height: 270px;
+float:left;
+}
+.box2 h2 {
+  margin:1px 0 0 0px;
+  padding:0px;
+  text-align: left;
+}
+.box2 h3 {
+  margin:1px 0 0 0px;
+  padding:0px;
+  text-align: left;
 }
