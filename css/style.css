@@ -78,3 +78,11 @@ height: auto;
   padding:0px;
   text-align: left;
 }
+h2#t1 {
+  margin:1px 0 0 0px;
+  padding:0px;
+}
+h3#t2 {
+  margin:1px 0 0 0px;
+  padding:0px;
+}
