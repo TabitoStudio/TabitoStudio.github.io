@@ -32,11 +32,11 @@ a {
   margin-right: 35px;
 }
 .box2 {
-border: #00bfff 1px solid; /*境界線の指定*/
-padding:10px;
-width: 80%;
+border: #00ffbf 1px solid; /*境界線の指定*/
 margin-left: auto;
 margin-right: auto;
+padding:10px;
+width: 80%;
 height: auto;
 }
 .box2 h2 {
@@ -48,4 +48,14 @@ height: auto;
   margin:1px 0 0 0px;
   padding:0px;
   text-align: left;
+}
+.box2 h1 {
+  margin:1px 0 0 0px;
+  padding:0px;
+  text-align: left;
+}
+.box2 img {
+  width: 99%;
+  height: auto;
+  margin-right: auto;
 }
