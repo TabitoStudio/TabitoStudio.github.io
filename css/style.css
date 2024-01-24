@@ -29,3 +29,7 @@
   aspect-ratio: 16 / 9;
   object-fit: cover;
 }
+#img-NEWS {
+  width: 10vw;
+  margin-top: auto;
+}
