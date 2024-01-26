@@ -35,11 +35,10 @@
 }
 .flex {
   display: flex; /*横並び*/
-  height: 20vw;
   box-shadow: 0 1vw 1vw 0 rgba(0, 0, 0, .5);
 }
 .flex .image {
-  width: 50%; /*画像サイズ指定*/
+  /*画像サイズ指定*/
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -56,12 +55,18 @@
   font-size: 3vw;
   color: #FFFFFF;
 }
+.flex .name {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 2.5vw;
+  color: #FFFFFF;
+}
 .flex .text {
   margin: 10px 10px 0 0;
   padding: 0;
   font-size: 2vw;
   color: #FFFFFF;
-  width: 60vw
 }
 .flex .image {
   overflow: hidden;
@@ -73,7 +78,6 @@
   padding-top: 58%;
 }
 .flex .image img {
-  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
