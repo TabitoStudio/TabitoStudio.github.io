@@ -102,3 +102,53 @@
   font-size: 2vw;
   color: #FFFFFF;
 }
+.bloghome {
+  display: flex; /*横並び*/
+}
+.bloghome .top {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+.blogstyle {
+  display: flex; /*横並び*/
+}
+.bloghome .menu {
+  box-shadow: 0 1vw 1vw 0 rgba(0, 0, 0, .5);
+  margin-left: auto;
+  width: 25vw;
+}
+.bloghome .menu .con {
+  display: flex; /*横並び*/
+  margin-left: auto;
+  width: 25vw;
+}
+.bloghome .top .newblog {
+  box-shadow: 0 1vw 1vw 0 rgba(0, 0, 0, .5);
+}
+.bloghome .top .newblog .title {
+  margin: 0 0 0 20px;
+  padding: 0;
+  font-weight: bold;
+  font-size: 3vw;
+  color: #000000;
+}
+.bloghome .top .newblog .subtitle {
+  margin: 0 0 0 20px;
+  padding: 0;
+  font-weight: bold;
+  font-size: 2.5vw;
+  color: #000000;
+}
+.bloghome .top .newblog .day {
+  margin: 0 0 0 20px;
+  padding: 0;
+  font-weight: bold;
+  font-size: 2vw;
+  color: #aaaaaa;
+}
+.bloghome .top .newblog .text {
+  margin: 0 20px 0 20px;
+  padding: 0;
+  font-size: 2.1vw;
+  color: #000000;
+}
