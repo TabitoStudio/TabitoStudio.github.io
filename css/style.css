@@ -152,3 +152,25 @@
   font-size: 2.1vw;
   color: #000000;
 }
+.openhomeimage {
+  position: relative;
+  z-index: 1;
+}
+.openhomecon1 {
+  position: absolute;
+  box-shadow: 0 1vw 1vw 0 rgba(0, 0, 0, .5);
+  top: 50vw;
+  left: 10vw;
+  width:18vw;
+  background-color:#000000;
+  z-index: 2;
+}
+.openhomecon2 {
+  position: absolute;
+  box-shadow: 0 1vw 1vw 0 rgba(0, 0, 0, .5);
+  top: 60vw;
+  left: 30vw;
+  width:18vw;
+  background-color:#000000;
+  z-index: 2;
+}
