@@ -85,6 +85,56 @@
   bottom: 0;
   margin: auto;
 }
+.product {
+  display: flex;
+}
+.product .image {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+.product .left {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+.product .title {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 3vw;
+  color: #FFFFFF;
+}
+.product .name {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 2.5vw;
+  color: #FFFFFF;
+}
+.product .text {
+  margin: 10px 10px 0 0;
+  padding: 0;
+  font-size: 2vw;
+  color: #FFFFFF;
+}
+.product .image {
+  overflow: hidden;
+  position: relative;
+}
+.product .image::before {
+  content: "";
+  display: block;
+  padding-top: 58%;
+}
+.product .image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
 .robopro {
   box-shadow: 0 1vw 1vw 0 rgba(0, 0, 0, .5);
 }
@@ -206,4 +256,25 @@
   padding: 0;
   font-size: 1.5vw;
   color: #AAAAAA;
+}
+a.productbto {
+  display: block;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 20vw;
+  font-size: 2vw;
+  margin:10 0 10 10;
+	padding: 1vw 1vw;
+	font-weight: bold;
+	background: linear-gradient(to top, rgb(255, 255, 0), #ffa500);
+	color: #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	-webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	transition: 0.5s;
+}
+
+a.productbto:hover {
+  color: #fff;
+	opacity: 0.5;
 }
