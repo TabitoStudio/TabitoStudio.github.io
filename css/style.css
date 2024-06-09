@@ -5,8 +5,11 @@
 }
 .header {
    /* flexboxの設定 */
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
    /* フォントや色の設定 */
-   font-size: 1.5vw;
+   font-size: 1.3vw;
    background-color: #ffffff;
    height: auto;
 }
