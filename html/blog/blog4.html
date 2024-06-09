@@ -1,0 +1,142 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="..\..\css\style.css">
+  </head>
+  <header class = "header">
+    <nav>
+      <ul class="header-menu">
+          <img class="header_logo" src="..\..\img\home\header.png" alt="" width="1028" height="206">
+          <li class="header-menu__item"><a href="..\..\index.html" style="text-decoration:none"><font color=#0B1783 face="arialblack">ホーム</font></a></li>
+          <li class="header-menu__item"><a href="..\blog\main.html" style="text-decoration:none"><font color=#0B1783 face="arialblack">ブログ</font></a></li>
+          <li class="header-menu__item"><a href="..\news\main.html" style="text-decoration:none"><font color=#0B1783 face="arialblack">最新情報</font></a></li>
+          <li class="header-menu__item"><a href="..\product\main.html" style="text-decoration:none"><font color=#0B1783 face="arialblack">製品</font></a></li>
+          <li class="header-menu__item"><a href="..\open\main.html" style="text-decoration:none"><font color=#0B1783 face="arialblack">技術公開</font></a></li>
+          <li class="header-menu__item"><a href="..\address\main.html" style="text-decoration:none"><font color=#0B1783 face="arialblack">お問い合わせ</font></a></li>
+      </ul>
+    </nav>
+  </header>
+  <body bgcolor="#ffffff">
+    <hr color="#0B1783"></hr>
+    <div class="bloghome">
+      <div class="top" style="width:70vw">
+        <div class="newblog">
+          <img src="../../img/blog/blog4/p1.png" alt="" style="width: 90%;display:block;margin:auto;margin: 0 0 0 20px;">
+          <p class="title">モータードライバの自作</p>
+          <p class="day">2024/6/9　🖊たびと</p>
+          <br>
+          <p class="text">
+            こんにちは。昨年まではロボットに市販のモータードライバを使用していました。市販のモータードライバを使用することはいろいろなメリットがあります。<br>
+            <strong>・ある程度動作が保証されている</strong><br>
+            さすがに動かないのに売られているという例は少ないと思います。ほとんどのものが接続して所定の設定を行えば使えるはずです。また保護回路等もあわせて搭載されており安心です。<br>
+            <strong>・手に入りやすい</strong><br>
+            売られているものなので、もしも壊れたり、追加でほしくなった時は、すぐに調達することができます。
+          </p><br>
+          <p class="subtitle">
+            自作しようと思った理由
+          </p>
+          <p class="text">
+            市販のモータードライバの使用を検討しましたが、ロボットの狭い隙間に収める必要があり、また基板も特殊な形にする必要がありました。そこでせっかくの機会にということで、自作することを決意しました。
+          </p><br>
+          <p class="subtitle">
+            ベースとなるモータードライバの選定
+          </p>
+          <p class="text">
+            さて、自作するにあたって問題となるのはモータードライバのICに何を使うかです。いろんなRCJの参加者に聞いて、最終的にDRV8874にすることにしました。
+            さっそく今回も利用するJLCPCBに在庫があるか確認してみます。在庫確認は<a href="https://jlcpcb.com/parts">ここ</a>から確認できます。調べてみたところ在庫がありました！なので作っていきたいと思います。
+            <img src="../../img/blog/blog4/p2.png" alt="" style="width: 90%;display:block;margin:auto;margin: 10px 0 10px 20px;">
+          </p><br>
+          <p class="subtitle">
+            製造データの制作
+          </p>
+          <p class="text">
+            回路図の制作ですが、一からつくってもいいのですが、いつまでたってもロボットが動かないという事態になりそうなので、
+            インターネット上に転がっている回路図に頼ろうと思います。スイッチサイエンスにDRV8874のモジュールとその回路図が転がっていたので、それを使おうと思います。
+            自作する部分は<strong>ICとその周辺回路、逆接続保護回路</strong>です。<br>
+            <br>
+            <strong>・ICとのその周辺回路</strong><br>具体的には配線図と照らし合わせながら、必要な配線を引き、コネクタとの導線を設計していきます。また、大電流が流れることが考えられる場所はできるだけパターン幅を確保しておきます。
+            とくに、同じものを４つ並べていくという作業になるため出来るだけそれに関連する部品はIC周りに集めそれを１ユニットととして設計することでうまく基板上を整理することができました。
+            <br><br>
+            <strong>・逆接続保護回路</strong><br>基本どこであっても逆接続は危ないですが、とくに大電流を扱うモータードライバでは出来るだけ逆接続というのは避けたい事態です。コネクタである程度逆接続についてはなんとなりますが、ケーブル側がつける場所間違えていたりすれば、逆電流が流れる可能性は十分にあり得ます。
+            このモータードライバではPchMOSFETを用いて逆接続から回路を遮断する手法をとっています。（実際に動く稼働か怖くて実験してません(^ ^;)）<br>
+            <img src="../../img/blog/blog4/p6.png" alt="" style="width: 90%;display:block;margin:auto;margin: 10px 0 10px 20px;">
+          </p><br>
+          <p class="subtitle">
+            注文
+          </p>
+          <p class="text">
+            今回もプリント基板の製造をJLCPCBに依頼しました。興味がある方はぜひ下のリンクからアクセスしてください。<br>
+            <p><iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fjlcpcb.com%2FJPV" title="PCB Prototype &amp; PCB Fabrication Manufacturer - JLCPCB" class="embed-card embed-webcard" scrolling="no" frameborder="0" style="display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;" loading="lazy"></iframe><cite class="hatena-citation"><a href="https://jlcpcb.com/JPV">jlcpcb.com</a></cite></p>
+          </p>
+          <p class="text">
+            <strong>・製造ファイルアップロード</strong>
+            <img src="../../img/blog/blog4/p3.png" alt="" style="width: 90%;display:block;margin:auto;margin: 10px 0 10px 20px;">
+            ファイルをアップロードして、注文していきます。特に設定は変更せずに基板の色だけ変えて次に進みました。このとき表面実装の設定も一緒に行います。<br>
+            <strong>・部品表ファイル、部品位置ファイルアップロード</strong>
+            <img src="../../img/blog/blog4/p4.png" alt="" style="width: 90%;display:block;margin:auto;margin: 10px 0 10px 20px;">
+            基板、表面実装設定後、左下の青いボタンを押してファイルのアップロードに進みます。アップロードする２種類のファイルは事前に準備しておきましょう。Kicadの部品位置ファイルのJLCPCBにアップロードできる形式への変更は「製品」ページのソフトを使用することをお勧めします。<br>
+            <strong>・部品の位置確認</strong>
+            <img src="../../img/blog/blog4/p5.png" alt="" style="width: 90%;display:block;margin:auto;margin: 10px 0 10px 20px;">
+            ファイルをアップロード後、青いボタンで次に進むと、使用する部品の在庫状況が表示されます。必要であれば部品の変更を行うことができます。さらに青いボタンで次に進むと部品の位置の最終確認を行うことができます。よく向きが間違っていたりするので注意してください。
+            問題なければ次に進み注文の確認後カートに追加されます。これで支払いを済ませれば注文は終わりです。<br>
+          </p><br>
+          <p class="subtitle">
+            基板到着
+          </p>
+          <p class="text">
+            すべてのモーターが回りましたが、制御基板から直接モータードライバを制御できないという問題が発生しました。次回はこの問題を何とか解消したいと思います
+            <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">だいぶ絶望的な見た目になってるけど、モーターなんとか全部動いた <a href="https://t.co/i4vdHSlFWY">pic.twitter.com/i4vdHSlFWY</a></p>&mdash; たびと！🐙ー定理 (@tabito1419) <a href="https://twitter.com/tabito1419/status/1797271401277386764?ref_src=twsrc%5Etfw">June 2, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </p>
+          <p class="subtitle">
+            最後に
+          </p>
+          <p class="text">
+            長い間ロボット製作をサポートしていただいているJLCPCBに今回のモータードライバの製造についてもサポートしていただきました。JLCPCBでは現在、多層基板や、フレキシブル基板なども安く注文でき、いろんなものの制作に活用することができます！ぜひ皆さんも使ってみましょう！以上スポンサーの紹介でした^^
+            <p><iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fjlcpcb.com%2FJPV" title="PCB Prototype &amp; PCB Fabrication Manufacturer - JLCPCB" class="embed-card embed-webcard" scrolling="no" frameborder="0" style="display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;" loading="lazy"></iframe><cite class="hatena-citation"><a href="https://jlcpcb.com/JPV">jlcpcb.com</a></cite></p>
+          </p>
+        </div>
+      </div>
+      <div class="menu">
+        <a href="blog1.html" style="text-decoration:none;">
+          <div class="con">
+            <div>
+              <p style="margin: 0 0 0 20px;padding: 0;font-weight: bold;font-size: 1.5vw;margin-top:auto;margin-bottom:auto;color:#000000;">ホームページを新しくしました！</p>
+              <p style="margin: 0 0 0 20px;padding: 0;font-weight: bold;font-size: 1vw;margin-top:auto;margin-bottom:auto;color:#aaaaaa">2024/2/5</p>
+            </div>
+            <img src="../../img/blog/blog1/p1.png" alt="" style="width: 30%;display:block;margin:auto;">
+          </div>
+        </a>
+        <hr style="color:#000000;">
+        <a href="blog2.html" style="text-decoration:none;"><!--横のメニュー1ブロック-->
+          <div class="con">
+            <div>
+              <p style="margin: 0 0 0 20px;padding: 0;font-weight: bold;font-size: 1.5vw;margin-top:auto;margin-bottom:auto;color:#000000;">Raspberry PI picoの自作</p>
+              <p style="margin: 0 0 0 20px;padding: 0;font-weight: bold;font-size: 1vw;margin-top:auto;margin-bottom:auto;color:#aaaaaa">2024/4/15</p>
+            </div>
+            <img src="../../img/blog/blog2/p1.png" alt="" style="width: 30%;display:block;margin:auto;">
+          </div>
+        </a>
+        <hr style="color:#000000;">
+        <a href="blog3.html" style="text-decoration:none;"><!--横のメニュー1ブロック-->
+          <div class="con">
+            <div>
+              <p style="margin: 0 0 0 20px;padding: 0;font-weight: bold;font-size: 1.5vw;margin-top:auto;margin-bottom:auto;color:#000000;">JLCPCBのCNCサービスでロボット機体製作</p>
+              <p style="margin: 0 0 0 20px;padding: 0;font-weight: bold;font-size: 1vw;margin-top:auto;margin-bottom:auto;color:#aaaaaa">2024/6/1</p>
+            </div>
+            <img src="../../img/blog/blog3/p1.png" alt="" style="width: 30%;display:block;margin:auto;">
+          </div>
+        </a>
+        <hr style="color:#000000;">
+        <a href="blog4.html" style="text-decoration:none;"><!--横のメニュー1ブロック-->
+          <div class="con">
+            <div>
+              <p style="margin: 0 0 0 20px;padding: 0;font-weight: bold;font-size: 1.5vw;margin-top:auto;margin-bottom:auto;color:#000000;">モータードライバの自作</p>
+              <p style="margin: 0 0 0 20px;padding: 0;font-weight: bold;font-size: 1vw;margin-top:auto;margin-bottom:auto;color:#aaaaaa">2024/6/9</p>
+            </div>
+            <img src="../../img/blog/blog4/p1.png" alt="" style="width: 30%;display:block;margin:auto;">
+          </div>
+        </a>
+        <hr style="color:#000000;">
+      </div>
+    </div>
+  </body>
+</html>
