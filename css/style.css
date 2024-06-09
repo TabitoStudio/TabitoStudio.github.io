@@ -1,18 +1,14 @@
 .header_logo {
   width: 20vw;
   height: 4vw;
+  padding-right: 10%;
 }
 .header {
    /* flexboxの設定 */
    /* フォントや色の設定 */
    font-size: 1.5vw;
-   background-color: #0B1783;
-   height: 4vw;
-   padding: 0;
-}
-body {
-  margin: 0;
-  padding: 0;
+   background-color: #ffffff;
+   height: auto;
 }
 .header-menu {
     display: flex;
@@ -20,11 +16,6 @@ body {
     align-items: center;
     list-style-type: none;
     text-align: center;
-}
-.menu__items {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
 }
 .header-menu__item {
     margin: 0 2rem;
