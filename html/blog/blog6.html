@@ -1,0 +1,156 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="..\..\css\style.css">
+  </head>
+  <header class = "header">
+    <nav>
+      <ul class="header-menu">
+          <img class="header_logo" src="..\..\img\home\header.png" alt="" width="1028" height="206">
+          <li class="header-menu__item"><a href="..\..\index.html" style="text-decoration:none"><font color=#0B1783 face="arialblack">ホーム</font></a></li>
+          <li class="header-menu__item"><a href="..\blog\main.html" style="text-decoration:none"><font color=#0B1783 face="arialblack">ブログ</font></a></li>
+          <li class="header-menu__item"><a href="..\news\main.html" style="text-decoration:none"><font color=#0B1783 face="arialblack">最新情報</font></a></li>
+          <li class="header-menu__item"><a href="..\product\main.html" style="text-decoration:none"><font color=#0B1783 face="arialblack">製品</font></a></li>
+          <li class="header-menu__item"><a href="..\open\main.html" style="text-decoration:none"><font color=#0B1783 face="arialblack">技術公開</font></a></li>
+          <li class="header-menu__item"><a href="..\address\main.html" style="text-decoration:none"><font color=#0B1783 face="arialblack">お問い合わせ</font></a></li>
+      </ul>
+    </nav>
+  </header>
+  <body bgcolor="#ffffff">
+    <hr color="#0B1783"></hr>
+    <div class="bloghome">
+      <div class="top" style="width:70vw">
+        <div class="newblog">
+          <img src="../../img/blog/blog6/p1.png" alt="" style="width: 90%;display:block;margin:auto;margin: 0 0 0 20px;">
+          <p class="title">ロボットが進化！</p>
+          <p class="day">2024/9/18　🖊たびと</p>
+          <hr>
+          <p class="subtitle">
+            今回のスポンサー
+          </p>
+          <p class="text">
+            前回と同様、今回もロボットの改良に必要なプリント基板の作成を「JLCPCB」にサポートしていただきました。JLCPCBは中国のプリント基板を製造する企業で、基板を安く注文でき、早く到着するのが特徴です。
+            ちょっと基板がほしいときあるのですぐに納品していただけるので助かります。おもしろそうなキャンペーンしていたので載せておきます。<br>
+            ↓興味がある方はタップして日本語版ホームページへ↓
+            <a href="https://jlcpcb.com/jp/"><img src="../../img/blog/blog6/p3.png" alt="" style="width: 90%;display:block;margin:auto;margin: 0 0 0 20px;"></a>
+            <a href="https://jlcpcb.com/jp/"><img src="../../img/blog/blog6/p4.png" alt="" style="width: 90%;display:block;margin:auto;margin: 10px 0 10px 20px;"></a>
+          </p>
+          <hr>
+          <p class="text">
+            みなさんこんにちは。いま大学生なので夏休み中ということでロボットの製作を頑張っています。今回は、ロボットのカメラ部分の変更を行いました。
+            以前まで私たちのチームは円錐型のミラーなど用いて全方位をカメラで見渡す方法でボールの探索を行っていました。
+            <img src="../../img/blog/blog6/p5.png" alt="" style="width: 90%;display:block;margin:auto;margin: 10px 0 10px 20px;">
+            しかし、使用していたミラーの精度や、角度の関係で、遠くのボールを見つけることができませんでした。そこで、ロボットのカメラ部分の仕様をおもいっきり変更することにしました。
+          </p><br>
+          <p class="subtitle">
+            変更箇所
+          </p>
+          <p class="text">
+            ミラーでの全方位の探索が難しかったので、カメラを複数台載せて直接ボールを見ることにしました。真横から前方の方向は魚眼レンズをつけたOpenMV
+            <img src="../../img/blog/blog6/p6.png" alt="" style="width: 90%;display:block;margin:auto;margin: 10px 0 10px 20px;">
+            真横から後ろは片側ずつ2台のM5stack unitvv m12で行うことにします。
+            <img src="../../img/blog/blog6/p7.png" alt="" style="width: 90%;display:block;margin:auto;margin: 10px 0 10px 20px;">
+            そのため、プリント基板も<br>
+            <strong>・OpenMV取付用のプリント基板</strong><br>
+            <strong>・無線通信モジュール用プリント基板</strong><br>
+            の改良が必要となったため、JLCPCBにプリント基板の発注をしました。
+          </p>
+          <p class="subtitle">
+            基板の設計
+          </p>
+          <p class="text">
+            基板を設計しました。今回の回路はとてもシンプルですが、ロボット間の通信や、カメラを扱う大切な基板なので配線などには細心の注意を払って作りました。
+            <img src="../../img/blog/blog6/p8.png" alt="" style="width: 90%;display:block;margin:auto;margin: 10px 0 10px 20px;">
+          </p>
+          <p class="subtitle">
+            基板到着
+          </p>
+          <p class="text">
+            いつも基板はパッケージにきれいに包装されているのですが、今回は包装だけではなくて紙までまかれていて、奇麗に包装されていました！
+            <img src="../../img/blog/blog6/p9.png" alt="" style="width: 90%;display:block;margin:auto;margin: 10px 0 10px 20px;">
+            さっそくこれを使ってロボットを組み立てて行きたいと思います。
+          </p>
+          <p class="subtitle">
+            動作確認
+          </p>
+          <p class="text">
+            魚眼レンズから見た景色がこちらです。ロボットからしっかり景色が見えていて、遠くのボールでも追うことができそうです。
+            <img src="../../img/blog/blog6/p10.png" alt="" style="width: 90%;display:block;margin:auto;margin: 10px 0 10px 20px;">
+            また、動作は今感じです。まだM5stack unitvの方のプログラムをかいていないので、真横はボールが見えないのですが、今のところしっかりボールを追跡できています。
+            <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ロボットがボール追跡した！ <a href="https://t.co/2tBSnrBWwe">pic.twitter.com/2tBSnrBWwe</a></p>&mdash; たびと！🐙ー定理 (@tabito1419) <a href="https://twitter.com/tabito1419/status/1835478163423682777?ref_src=twsrc%5Etfw">September 16, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            無線通信についてはまた次のブログで紹介します。
+          </p>
+          <p class="subtitle">
+            最後に
+          </p>
+          <p class="text">
+            今回もJLCPCBで注文しました。ブログ内でも取り上げましたが、基板の包装はしっかりしているので質もばっちりです。ぜひみなさんもJLCPCBで発注してみてくださいね。
+            ↓ホームページへ↓
+            <a href="https://jlcpcb.com/jp/"><img src="../../img/blog/blog5/p2.png" alt="" style="width: 90%;display:block;margin:auto;margin: 10px 0 10px 20px;"></a>
+          </p><br>
+        </div>
+      </div>
+      <div class="menu">
+        <a href="blog1.html" style="text-decoration:none;">
+          <div class="con">
+            <div>
+              <p style="margin: 0 0 0 20px;padding: 0;font-weight: bold;font-size: 1.5vw;margin-top:auto;margin-bottom:auto;color:#000000;">ホームページを新しくしました！</p>
+              <p style="margin: 0 0 0 20px;padding: 0;font-weight: bold;font-size: 1vw;margin-top:auto;margin-bottom:auto;color:#aaaaaa">2024/2/5</p>
+            </div>
+            <img src="../../img/blog/blog1/p1.png" alt="" style="width: 30%;display:block;margin:auto;">
+          </div>
+        </a>
+        <hr style="color:#000000;">
+        <a href="blog2.html" style="text-decoration:none;"><!--横のメニュー1ブロック-->
+          <div class="con">
+            <div>
+              <p style="margin: 0 0 0 20px;padding: 0;font-weight: bold;font-size: 1.5vw;margin-top:auto;margin-bottom:auto;color:#000000;">Raspberry PI picoの自作</p>
+              <p style="margin: 0 0 0 20px;padding: 0;font-weight: bold;font-size: 1vw;margin-top:auto;margin-bottom:auto;color:#aaaaaa">2024/4/15</p>
+            </div>
+            <img src="../../img/blog/blog2/p1.png" alt="" style="width: 30%;display:block;margin:auto;">
+          </div>
+        </a>
+        <hr style="color:#000000;">
+        <a href="blog3.html" style="text-decoration:none;"><!--横のメニュー1ブロック-->
+          <div class="con">
+            <div>
+              <p style="margin: 0 0 0 20px;padding: 0;font-weight: bold;font-size: 1.5vw;margin-top:auto;margin-bottom:auto;color:#000000;">JLCPCBのCNCサービスでロボット機体製作</p>
+              <p style="margin: 0 0 0 20px;padding: 0;font-weight: bold;font-size: 1vw;margin-top:auto;margin-bottom:auto;color:#aaaaaa">2024/6/1</p>
+            </div>
+            <img src="../../img/blog/blog3/p1.png" alt="" style="width: 30%;display:block;margin:auto;">
+          </div>
+        </a>
+        <hr style="color:#000000;">
+        <a href="blog4.html" style="text-decoration:none;"><!--横のメニュー1ブロック-->
+          <div class="con">
+            <div>
+              <p style="margin: 0 0 0 20px;padding: 0;font-weight: bold;font-size: 1.5vw;margin-top:auto;margin-bottom:auto;color:#000000;">モータードライバの自作</p>
+              <p style="margin: 0 0 0 20px;padding: 0;font-weight: bold;font-size: 1vw;margin-top:auto;margin-bottom:auto;color:#aaaaaa">2024/6/9</p>
+            </div>
+            <img src="../../img/blog/blog4/p1.png" alt="" style="width: 30%;display:block;margin:auto;">
+          </div>
+        </a>
+        <hr style="color:#000000;">
+        <a href="blog5.html" style="text-decoration:none;"><!--横のメニュー1ブロック-->
+          <div class="con">
+            <div>
+              <p style="margin: 0 0 0 20px;padding: 0;font-weight: bold;font-size: 1.5vw;margin-top:auto;margin-bottom:auto;color:#000000;">ついにロボットが動いた！</p>
+              <p style="margin: 0 0 0 20px;padding: 0;font-weight: bold;font-size: 1vw;margin-top:auto;margin-bottom:auto;color:#aaaaaa">2024/8/7</p>
+            </div>
+            <img src="../../img/blog/blog5/p1.png" alt="" style="width: 30%;display:block;margin:auto;">
+          </div>
+        </a>
+        <hr style="color:#000000;">
+        <a href="blog6.html" style="text-decoration:none;"><!--横のメニュー1ブロック-->
+          <div class="con">
+            <div>
+              <p style="margin: 0 0 0 20px;padding: 0;font-weight: bold;font-size: 1.5vw;margin-top:auto;margin-bottom:auto;color:#000000;">ロボットが進化！</p>
+              <p style="margin: 0 0 0 20px;padding: 0;font-weight: bold;font-size: 1vw;margin-top:auto;margin-bottom:auto;color:#aaaaaa">2024/9/18</p>
+            </div>
+            <img src="../../img/blog/blog6/p1.png" alt="" style="width: 30%;display:block;margin:auto;">
+          </div>
+        </a>
+        <hr style="color:#000000;">
+      </div>
+    </div>
+  </body>
+</html>
