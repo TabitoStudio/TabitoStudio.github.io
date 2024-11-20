@@ -168,7 +168,6 @@
   box-shadow: 0 1vw 1vw 0 rgba(0, 0, 0, .5);
   margin-left: auto;
   width: 25vw;
-  height: 50vw;
 }
 .bloghome .menu .con {
   display: flex; /*横並び*/
