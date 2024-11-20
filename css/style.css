@@ -164,15 +164,10 @@
 .blogstyle {
   display: flex; /*横並び*/
 }
-.bloghome .menu {
-  box-shadow: 0 1vw 1vw 0 rgba(0, 0, 0, .5);
-  margin-left: auto;
-  width: 25vw;
-}
-.bloghome .menu .con {
+.blogMenu .con {
   display: flex; /*横並び*/
   margin-left: auto;
-  width: 25vw;
+  width: 100%;
 }
 .bloghome .top .newblog {
   box-shadow: 0 1vw 1vw 0 rgba(0, 0, 0, .5);
