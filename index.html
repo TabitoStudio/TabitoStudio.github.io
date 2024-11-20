@@ -3,8 +3,8 @@
     <link rel="stylesheet" href="css\style.css">
     <style type="text/css">
         #photo {
-            width: 100%;
-            height: 56vw;
+            width: 100vw;
+            height: 35vw;
             margin: 0 auto;
             text-align: left;
             overflow: hidden;
@@ -39,7 +39,8 @@
   <header class = "header">
     <nav>
       <ul class="header-menu">
-          <img class="header_logo" src="img\home\header.png" alt="" width="1028" height="206">
+          <img class="header_logo" src="img\home\Tabiprologo1.png" alt="" width="23vw" height="5vw">
+          <img class="header_logo" src="img\home\tachyonlogo.png" alt="" width="23vw" height="5vw">
           <li class="header-menu__item"><a href="index.html" style="text-decoration:none"><font color=#0B1783 face="arialblack">ホーム</font></a></li>
           <li class="header-menu__item"><a href="html\blog\main.html" style="text-decoration:none"><font color=#0B1783 face="arialblack">ブログ</font></a></li>
           <li class="header-menu__item"><a href="html\news\main.html" style="text-decoration:none"><font color=#0B1783 face="arialblack">最新情報</font></a></li>
@@ -50,95 +51,103 @@
     </nav>
   </header>
   <body bgcolor="#ffffff">
-  <hr color="#0B1783"></hr>
   <div id="photo">
-    <img class="photoshow" src="img/home/スライド１.png">
-    <img class="photoshow" src="img/home/スライド６.png">
-    <img class="photoshow" src="img/home/スライド８.png">
-　</div>
-<div class="flex" style="background-color:#dc143c" style="height:20vw;">
-  <div class="left">
-    <p class="title">いろんなものを製作中！</p>
-    <p class="text" style="width: 60vw">私たちはロボットの製作やアプリケーションの作成など、日々いろいろなものの製作に挑戦しています。</p>
+    <img class="photoshow" src="img/home/suraido1.png">
+    <img class="photoshow" src="img/home/suraido2.png">
+    <img class="photoshow" src="img/home/suraido3.png">
   </div>
-<figure class="image" style="width: 50%; "><img src="img/home/seisakutyu.png" alt="" style="width: 100%;"></figure>
-</div>
-<p></p>
-<div class="flex" style="background-color:#ffd700" style="height:20vw;">
-  <div class="left">
-    <p class="title">技術公開！</p>
-    <p class="text" style="width: 60vw">ロボットやソフトのプログラム、ロボットの回路図等は準備ができ次第公開していく予定です。</p>
+  <!--
+  <div class="video-container">
+    <video autoplay loop muted>
+      <source src="img/home/robovideo.mp4" type="video/mp4"> お使いのブラウザは動画タグに対応していません。 
+    </video>
   </div>
-<figure class="image" style="width: 50%; "><img src="img/home/koukai.png" alt="" style="width: 100%;"></figure>
-</div>
-<p></p>
-<div class="flex" style="background-color:#228b22" style="height:20vw;">
-  <div class="left">
-    <p class="title">ブログで情報発信</p>
-    <p class="text" style="width: 60vw">ブログでは、最近取り組んでいることや、うまくいったこと、製作した基板についてなど様々な内容を発信します。ぜひチェック！</p>
+-->
+<div class="resize-section">
+  <div class="flex" style="background-color:#dc143c" style="height:20vw;">
+    <div class="left">
+      <p class="title">いろんなものを製作中！</p>
+      <p class="text" style="width: 60vw">私たちはロボットの製作やアプリケーションの作成など、日々いろいろなものの製作に挑戦しています。</p>
+    </div>
+  <figure class="image" style="width: 50%; "><img src="img/home/seisakutyu.png" alt="" style="width: 100%;"></figure>
   </div>
-<figure class="image" style="width: 50%; "><img src="img/home/blog.png" alt="" style="width: 100%;"></figure>
-</div>
-<p></p>
-<div class="flex" style="background-color:#333333">
-  <div class="left">
-    <p class="title">注目のニュース</p>
-    <p class="text">製品ページを公開しました。(2024/3/7)<br>
-    <a href="html/news/main.html#news1" class="text">Logical最新バージョン公開予定！(2024/2/2)</a>
+  <p></p>
+  <div class="flex" style="background-color:#ffd700" style="height:20vw;">
+    <div class="left">
+      <p class="title">技術公開！</p>
+      <p class="text" style="width: 60vw">ロボットやソフトのプログラム、ロボットの回路図等は準備ができ次第公開していく予定です。</p>
+    </div>
+  <figure class="image" style="width: 50%; "><img src="img/home/koukai.png" alt="" style="width: 100%;"></figure>
   </div>
-</div>
-<p></p>
-<div class="flex" style="background-color:#999999" style="height:30vw;">
-  <div class="left">
-    <p class="title">メンバー紹介</p>
-    <p class="name">たびと</p>
-    <hr>
-    <p class="text" style="width: 60vw">
-      所属：電気通信大学１年<br>
-      活動：ロボットの基板の設計とプログラムの作成、ソフトの開発<br>
-      受賞歴：帝京大学高校生プログラミングコンテスト入賞<br>
-      RCJ歴：2年<br>
-      主な使用言語：Python<br>
-      <br>
-    </p>
+  <p></p>
+  <div class="flex" style="background-color:#228b22" style="height:20vw;">
+    <div class="left">
+      <p class="title">ブログで情報発信</p>
+      <p class="text" style="width: 60vw">ブログでは、最近取り組んでいることや、うまくいったこと、製作した基板についてなど様々な内容を発信します。ぜひチェック！</p>
+    </div>
+  <figure class="image" style="width: 50%; "><img src="img/home/blog.png" alt="" style="width: 100%;"></figure>
   </div>
-<figure class="image" style="width: 30%; "><img src="img/home/tabito1419.jpg" alt="" style="width: 50%;border-radius: 50%;"></figure>
-</div>
-<div class="flex" style="background-color:#999999" style="height:30vw;">
-  <div class="left">
-    <p class="name">だいなすた</p>
-    <hr>
-    <p class="text" style="width: 60vw">
-      所属：九州大学１年<br>
-      活動：ロボットの設計とプログラムの作成、ソフトの開発<br>
-      受賞歴：-<br>
-      RCJ歴：2年<br>
-      主な使用言語：Delphi（Embarcadero Technologies, Inc提供アプリケーション統合開発環境）
-    </p>
+  <p></p>
+  <div class="flex" style="background-color:#333333">
+    <div class="left">
+      <p class="title">注目のニュース</p>
+      <p class="text">製品ページを公開しました。(2024/3/7)<br>
+      <a href="html/news/main.html#news1" class="text">Logical最新バージョン公開予定！(2024/2/2)</a>
+    </div>
   </div>
-<figure class="image" style="width: 30%; "><img src="img/home/tetu.jpg" alt="" style="width: 50%;border-radius: 50%;"></figure>
-</div>
-<p></p>
-<div class="robopro" style="background-color:#ccffcc">
-  <p class="title">Youtubeで動画配信中！</p>
-  <iframe width="100%" height="80%" src="https://www.youtube.com/embed/ZH87og2w580?si=zuB3iH0H3ePimx3P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
-<p></p>
-<div class="robopro">
-  <p class="title">RCJ用ロボット製作状況</p>
-  <img src="img/home/robosintyoku.png" alt="" style="width: 60%;display:block;margin:auto;">
-</div>
-<p></p>
-<div class="flex" style="background-color:#0000a9" style="height:20vw;">
-  <div class="left">
-    <p class="title">スポンサー</p>
-    <p class="name">JLCPCB ~PCBの製造を行う企業~</p>
-    <p class="text" style="width:50vw">ロボットに搭載されている基板はすべてJLCPCB製の基板を使用しています。１年以上の間、基板発注のサポートをしていただいており、
-    新しいセンサや、マイコンボード開発などに挑戦することができています。企業の詳細情報などは右の広告をクリック→</p>
-    <figure class="image" style="width: 30%; "><img src="img/home/suponsa.png" alt="" style="width: 100%;"></figure>
+  <p></p>
+  <div class="flex" style="background-color:#999999" style="height:30vw;">
+    <div class="left">
+      <p class="title">メンバー紹介</p>
+      <p class="name">たびと</p>
+      <hr>
+      <p class="text" style="width: 60vw">
+        所属：電気通信大学１年<br>
+        活動：ロボットの基板の設計とプログラムの作成、ソフトの開発<br>
+        受賞歴：帝京大学高校生プログラミングコンテスト入賞<br>
+        RCJ歴：2年<br>
+        主な使用言語：Python<br>
+        <br>
+      </p>
+    </div>
+  <figure class="image" style="width: 30%; "><img src="img/home/tabito1419.jpg" alt="" style="width: 50%;border-radius: 50%;"></figure>
   </div>
-  <a href="https://jlcpcb.com/JPV"><img src="img/home/jlcpcba.jpg" alt="" style="width: 100%;display:block;margin-left:auto;"></a>
+  <div class="flex" style="background-color:#999999" style="height:30vw;">
+    <div class="left">
+      <p class="name">だいなすた</p>
+      <hr>
+      <p class="text" style="width: 60vw">
+        所属：九州大学１年<br>
+        活動：ロボットの設計とプログラムの作成、ソフトの開発<br>
+        受賞歴：-<br>
+        RCJ歴：2年<br>
+        主な使用言語：Delphi（Embarcadero Technologies, Inc提供アプリケーション統合開発環境）
+      </p>
+    </div>
+  <figure class="image" style="width: 30%; "><img src="img/home/tetu.jpg" alt="" style="width: 50%;border-radius: 50%;"></figure>
+  </div>
+  <p></p>
+  <div class="robopro" style="background-color:#ccffcc">
+    <p class="title">Youtubeで動画配信中！</p>
+    <iframe width="100%" height="80%" src="https://www.youtube.com/embed/ZH87og2w580?si=zuB3iH0H3ePimx3P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  <p></p>
+  <div class="robopro">
+    <p class="title">RCJ用ロボット製作状況</p>
+    <img src="img/home/robosintyoku.png" alt="" style="width: 80%;display:block;margin:auto;">
+  </div>
+  <p></p>
+  <div class="flex" style="background-color:#0000a9" style="height:20vw;">
+    <div class="left">
+      <p class="title">スポンサー</p>
+      <p class="name">JLCPCB ~PCBの製造を行う企業~</p>
+      <p class="text" style="width:50vw">ロボットに搭載されている基板はすべてJLCPCB製の基板を使用しています。１年以上の間、基板発注のサポートをしていただいており、
+      新しいセンサや、マイコンボード開発などに挑戦することができています。企業の詳細情報などは右の広告をクリック→</p>
+      <figure class="image" style="width: 30%; "><img src="img/home/suponsa.png" alt="" style="width: 100%;"></figure>
+    </div>
+    <a href="https://jlcpcb.com/JPV"><img src="img/home/jlcpcba.jpg" alt="" style="width: 100%;display:block;margin-left:auto;"></a>
+  </div>
+  <p style="text-align: right;">最終更新20224/6/9/10:32/ver2.1.5</p>
 </div>
-<p style="text-align: right;">最終更新20224/6/9/10:32/ver2.1.5</p>
 </body>
 </html>
