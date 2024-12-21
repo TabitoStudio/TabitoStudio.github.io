@@ -1,40 +1,56 @@
 .header_logo {
-  width: 20vw;
-  height: 4vw;
-  padding-right: 10%;
+  padding: 0%;
+  width: 22vw;
+  height: 5vw;
 }
 .header {
    /* flexboxの設定 */
+   width: 100%;
    display: flex;
    justify-content: space-between;
    align-items: center;
    /* フォントや色の設定 */
    font-size: 1.3vw;
-   background-color: #ffffff;
+   background-color: #b8e1e2c9;
    height: auto;
 }
 .header-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-    text-align: center;
+  padding: 0%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  text-align: center;
 }
 .header-menu__item {
-    margin: 0 2rem;
-    text-decoration: none;
-    font-weight: bold;
-    /*padding: 1px;*/
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin: 0 1.5vw;
+  text-decoration: none;
+  font-weight: bold;
+  /*padding: 1px;*/
 }
 .photoshow {
   width: 100%;
-  aspect-ratio: 16 / 9;
   object-fit: cover;
 }
 #img-NEWS {
   width: 10vw;
   margin-top: auto;
 }
+/*
+.resize-section { 
+  width: 100%; background-color: 
+  lightblue; padding: 20px; 
+} 
+@media screen and (min-width: 1024px) { .resize-section 
+  { width: 70%; 
+    margin: 0 auto; 
+  }
+}
+*/
 .flex {
   display: flex; /*横並び*/
   box-shadow: 0 1vw 1vw 0 rgba(0, 0, 0, .5);
@@ -164,15 +180,10 @@
 .blogstyle {
   display: flex; /*横並び*/
 }
-.bloghome .menu {
-  box-shadow: 0 1vw 1vw 0 rgba(0, 0, 0, .5);
-  margin-left: auto;
-  width: 25vw;
-}
-.bloghome .menu .con {
+.blogMenu .con {
   display: flex; /*横並び*/
   margin-left: auto;
-  width: 25vw;
+  width: 100%;
 }
 .bloghome .top .newblog {
   box-shadow: 0 1vw 1vw 0 rgba(0, 0, 0, .5);
@@ -278,4 +289,15 @@ a.productbto {
 a.productbto:hover {
   color: #fff;
 	opacity: 0.5;
+}
+
+.video-container { 
+  top: 0; 
+  left: 0; 
+  width: 100%;  
+  pointer-events: none; /* ユーザーが動画をクリックできないようにする */ 
+} 
+.video-container video { 
+  width: 100%;  
+  object-fit: cover;
 }
