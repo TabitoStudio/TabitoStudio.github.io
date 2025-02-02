@@ -196,7 +196,7 @@
   color: #000000;
 }
 .bloghome .top .newblog .subtitle {
-  margin: 0 0 0 20px;
+  margin: 20px 0 0 20px;
   padding: 0;
   font-weight: bold;
   font-size: 2.5vw;
@@ -210,10 +210,28 @@
   color: #aaaaaa;
 }
 .bloghome .top .newblog .text {
-  margin: 0 20px 0 20px;
+  margin: 10px 20px 10px 20px;
   padding: 0;
   font-size: 2.1vw;
   color: #000000;
+}
+.bloghome .top .newblog .codebox {
+  background-color: #2d2d2d;
+  color: #dcdcdc;
+  border-radius: 8px;
+  margin: 1vw auto auto 1vw;
+  width: 67vw;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  overflow-x: auto;
+}
+.bloghome .top .newblog .codebox pre {
+  margin: 0;
+  padding: 0;
+  white-space: pre-wrap; /* 改行を保持する */
+}
+.bloghome .top .newblog .codebox code {
+  color: #c5c8c6;
+  font-size: 1.6vw;
 }
 .openhomeimage {
   position: relative;
