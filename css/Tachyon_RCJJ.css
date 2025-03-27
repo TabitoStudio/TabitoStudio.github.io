@@ -391,3 +391,46 @@
   padding: 5px;
   border-radius: 5px;
 }
+
+.side-menu {
+    position: fixed;
+    top: 6.5vw;
+    left: 0;
+    width: 15vw;
+    background-color: #333;
+    height: 100%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .menu-item {
+    width: 16.7vw;
+    margin: 0 0 0 -5vw;
+    padding: 1.5vw;
+    font-size: 1.1vw;
+    background-color: #444;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .menu-item:hover {
+    background-color: #555;
+  }
+
+  .menu-item.active {
+    background-color: #0066ff;
+  }
+
+  .content {
+    margin-left: 20vw; /* サイドメニューの幅に合わせて調整 */
+    padding: 1vw;
+  }
+  
+  .content-frame {
+    width: 100%;
+    height: calc(100vh - 100px); /* ヘッダーの高さに合わせて調整 */
+    border: none;
+  }

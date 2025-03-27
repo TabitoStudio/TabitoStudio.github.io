@@ -65,6 +65,38 @@
 </header>
 
 <body bgcolor="#ffffff">
+  <a href="html/Tachyon_RCJJ/index.html" style="text-decoration:none;">
+    <div style="background: linear-gradient(45deg, #d16cc6,#0070c0); color: white; text-align: center; font-size: 2vw;">
+      3/28~3/29 RCJジャパンオープン用 チーム「Tavhyon」のページを公開▶▶
+    </div>
+  </a>
+  <div class="popup-overlay" id="popup-overlay"></div>
+  <div class="popup" id="popup">
+    <span class="popup-close" id="popup-close">&times;</span>
+    <img src="img/home/popup1.png" alt="ロボット" width="70%">
+    <p>RCJJ用Tachyon特設ページを公開しました！</p>
+    <a href="html/Tachyon_RCJJ/index.html" class="popup-link">こちら➔</a>
+  </div>
+
+  <script>
+    function showPopup() {
+      document.getElementById('popup-overlay').style.display = 'block';
+      document.getElementById('popup').style.display = 'block';
+    }
+    function closePopup() {
+      document.getElementById('popup-overlay').style.display = 'none';
+      document.getElementById('popup').style.display = 'none';
+    }
+    window.onload = function () {
+      showPopup();
+    };
+    document.getElementById('popup-close').onclick = function () {
+      closePopup();
+    };
+    document.getElementById('popup-overlay').onclick = function () {
+      closePopup();
+    };
+  </script>
   <div id="photo">
     <img class="photoshow" src="img/home/suraido1.png">
     <img class="photoshow" src="img/home/suraido2.png">

@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="..\..\css\Tachyon_RCJJ.css">
+  </head>
+  <header class="header">
+    <nav>
+      <ul class="header-menu">
+        <img class="header_logo" src="..\..\img\home\Tabiprologo1.png" alt="" width="23vw" height="5vw">
+        <img class="header_logo" src="..\..\img\home\tachyonlogo.png" alt="" width="23vw" height="5vw">
+        <li class="header-menu__item"><a href="..\..\index.html" style="text-decoration:none"><font color=#0B1783 face="arialblack">ホーム</font></a></li>
+        <li class="header-menu__item"><a href="..\blog\main.html" style="text-decoration:none"><font color=#0B1783 face="arialblack">ブログ</font></a></li>
+        <li class="header-menu__item"><a href="..\news\main.html" style="text-decoration:none"><font color=#0B1783 face="arialblack">最新情報</font></a></li>
+        <li class="header-menu__item"><a href="..\product\main.html" style="text-decoration:none"><font color=#0B1783 face="arialblack">製品</font></a></li>
+        <li class="header-menu__item"><a href="..\open\main.html" style="text-decoration:none"><font color=#0B1783 face="arialblack">技術公開</font></a></li>
+        <li class="header-menu__item"><a href="..\address\main.html" style="text-decoration:none"><font color=#0B1783 face="arialblack">お問い合わせ</font></a></li>
+      </ul>
+    </nav>
+  </header>
+  <body bgcolor="#222222">
+    <div class="side-menu">
+        <a href="#" class="menu-item active" onclick="showContent('profile', this)">プロフィール</a>
+        <a href="#" class="menu-item" onclick="showContent('results', this)">試合結果</a>
+        <a href="#" class="menu-item" onclick="showContent('documents', this)">資料公開</a>
+      </div>
+    <div class="content">
+      <iframe id="content-frame" src="profile.html" frameborder="0" class="content-frame"></iframe>
+    </div>
+  
+    <script>
+      function showContent(page, element) {
+        document.getElementById('content-frame').src = page + '.html';
+        var items = document.getElementsByClassName('menu-item');
+        for (var i = 0; i < items.length; i++) {
+            items[i].classList.remove('active');
+        }
+        element.classList.add('active');
+      }
+    </script>
+  </body>
+</html>
