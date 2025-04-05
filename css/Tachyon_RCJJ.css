@@ -434,3 +434,81 @@
     height: calc(100vh - 100px); /* ヘッダーの高さに合わせて調整 */
     border: none;
   }
+
+  .result-page h4 {
+    font-size: 2.3vw;
+    margin: 0;
+    margin-right: 5vw;
+    padding: 0;
+    color: #FFFFFF;
+  }
+
+  .result-page h3 {
+    font-size: 2.5vw;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+  }
+
+  .result-lose {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: #FFAAAA;
+    background-color: #FF6666;
+    border-color: #FF0000;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 2vw;
+    margin-bottom: 0.5vw;
+  }
+
+  .result-win {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: #AAFFAA;
+    background-color: #66FF66;
+    border-color: #00FF00;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 2vw;
+    margin-bottom: 0.5vw;
+  }
+
+  .result-page p {
+    font-size: 4.2vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .documents-page h3 {
+    font-size: 2.5vw;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+  }
+
+  .documents-page h4 {
+    font-size: 2.3vw;
+    margin: 0;
+    margin-right: 5vw;
+    padding: 0;
+    color: #FFFFFF;
+  }
+
+  .document-tile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 0.5vw;
+  }
+
+  .rcjblog-tile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 0.5vw;
+  }
