@@ -505,6 +505,13 @@
     margin-bottom: 0.5vw;
   }
 
+  .rcjblogs-main-page h3 {
+    font-size: 2.5vw;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+  }
+
   .rcjblog-tile {
     display: flex;
     justify-content: space-between;
